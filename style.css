@@ -1,0 +1,222 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+    --background-color1: #ffffff;
+    --background-color2: #f3f4f6;
+    --text-color1: #333333;
+    --text-color2: rgb(156, 163, 175);
+    --price-color: #2563eb;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: var(--text-color1);
+}
+
+details ul li {
+  list-style-type: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  transform: 0.5s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+    color: var(--text-color1);
+    background-color: var(--background-color1);
+    font-size: 1.3rem;
+}
+
+.header {
+    background-color: var(--background-color2);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: sticky;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.2);
+}
+
+.name {
+    flex: 0;
+    display: flex;
+    align-items: center;
+}
+
+.rest-header {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 9%
+}
+
+.right-header {
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5%;
+}
+
+#cart {
+    max-height: 50px;
+}
+
+button {
+    height: 50px;
+    width: 130px;
+    font-size: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 75px 1fr 75px 1.9fr 50px;
+}
+
+.main-card {
+  grid-column: 1 / 11;
+  grid-row: 2 / 3;
+  background-color: var(--background-color2);
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#main-card-image {
+  border-radius: 15px;
+  max-width: 50%;
+}
+
+.rest-cards {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 35px;
+}
+
+.gaming-card {
+  background-color: var(--background-color2);
+  padding: 50px;
+  border-radius: 10px;
+  grid-column: 3 / 9;
+  display: flex;
+  gap: 40px;
+}
+
+.custom-builds-card, 
+.workstations-card {
+  border-radius: 10px;
+}
+
+.text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.card-info p {
+  font-size: 1.2rem;
+}
+
+img {
+  border-radius: 10px;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+.image {
+  height: 452px;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--price-color);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  align-self: end;
+  flex: 1;
+}
+
+.learnmore {
+  width: 200px;
+  flex: 1 1 0;
+}
+
+.card-info ul li {
+  margin-top: 20px;
+}
+
+.card-price {
+  display: flex;
+  margin-top: 55px;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.workstation-card {
+  grid-column: 2 / 8;
+  grid-row: 2 / 3;
+  display: flex;
+  padding: 50px;
+  background-color: var(--background-color2);
+  gap: 40px;
+}
+
+#workstations,
+#GamingPCs,
+#custom-builds {
+  height: 453px;
+}
+
+.custom-builds-card {
+  grid-column: 4 / 10;
+  grid-row: 3 / 4;
+  display: flex;
+  padding: 50px;
+  gap: 40px;
+  background-color: var(--background-color2);
+}
+
+.footer {
+  background-color: var(--background-color2);
+  font-size: 1.2rem;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
